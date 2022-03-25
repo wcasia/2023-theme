@@ -953,6 +953,11 @@ select:focus {
 	margin-bottom: 1.5rem;
 }
 
+.entry-content ul,
+.entry-content ol {
+	margin: auto;
+}
+
 .entry-content a.more-link {
 	padding: 0.5rem 1rem;
 	background: #ea8c70;
