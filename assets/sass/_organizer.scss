@@ -10,18 +10,22 @@ h3.org-group {
 	color: $color-red;
 	font-size: 1.563em;
 	margin-bottom: 2.5rem;
-	&:before, &:after {
-		content: '';
+
+	&::before,
+	&::after {
+		content: "";
 		border-top: 1px dotted $color-red;
 		margin: 0 1.5rem 0 0;
 		flex: 1 0 1.5rem;
 	}
-	&:after {
+
+	&::after {
 		margin: 0 0 0 1.5rem;
 	}
 }
 
 .wcorg-organizer {
+
 	h2 {
 		color: $color-navy;
 		font-size: 1.25em;
@@ -29,6 +33,7 @@ h3.org-group {
 }
 
 .wcorg-organizer-description {
+
 	.avatar {
 		float: left;
 		margin: 0 20px 20px 0;
@@ -36,17 +41,18 @@ h3.org-group {
 }
 
 .org-team-leads {
-	&--local .wordcamp-organizers__title:after,
-	&--global .wordcamp-organizers__title:after {
+
+	&--local .wordcamp-organizers__title::after,
+	&--global .wordcamp-organizers__title::after {
 		font-size: 0.7em;
 		font-weight: 400;
 	}
 
-	&--local .wordcamp-organizers__title:after {
-		content: '— Local lead';
+	&--local .wordcamp-organizers__title::after {
+		content: "— Local lead";
 	}
 
-	&--global .wordcamp-organizers__title:after {
-		content: '— Global lead';
+	&--global .wordcamp-organizers__title::after {
+		content: "— Global lead";
 	}
 }

@@ -1,0 +1,43 @@
+/* VARIABLES
+---------------------------------------*/
+
+// Font
+$font-primary: "Rubik", sans-serif;
+$font-secondary: "Roboto Slab", serif;
+$font-japanese: "M PLUS 1p", sans-serif;
+$font-chinese: "Noto Sans TC", sans-serif;
+$font-thai-heading: "Mitr" sans-serif;
+$font-thai-body: "Sarabun", sans-serif;
+
+// Font Weight
+$font-weight: (
+  thin: 100,
+  extra-light: 200,
+  light: 300,
+  regular: 400,
+  medium: 500,
+  semi-bold: 600,
+  bold: 700,
+  extra-bold: 800,
+  black: 900,
+);
+
+// Color
+$color-red: #e63331;
+$color-rose-pink: #0d5abc;
+$color-red-alt: #ef8162;
+$color-yellow: #edb959;
+$color-navy: #104b8c;
+$color-blue: #0d5abc;
+
+$color-orange: #d97b2d;
+$color-cream: #f5f1e8;
+$color-dark-red: #8a3b33;
+$color-green: #2b5c4e;
+$color-grey: #36393b;
+$color-fave-off: #ffeed0;
+$color-fave-on: #dab701;
+
+$color-white: #fff;
+$heading-color: $color-rose-pink;
+$text-color: $color-grey;

@@ -1,35 +1,48 @@
-# WordCamp Asia 2020
+# WordCamp Asia 2023
 
-Setup guide for the WordCamp Asia 2020 theme.
+Setup guide for the [WordCamp Asia 2023](https://asia.wordcamp.org/2023) theme.
 
+## Set up the theme
 
-##  Setup on wordcamp.org (https://2020.asia.wordcamp.org)
+- Go to `WP Admin » Appearance » Themes`.
+- Select the [`Twenty Twenty`](https://wordpress.org/themes/twentytwenty/) theme.
 
-**Themes | _Appearance -> Themes_**
-* Use CampSite 2017
+## Set up the site identity
 
-**Site Identity | _Appearance -> Customize -> Site Identity_**
-* Input Site Title, Tagline and Site Icon.
+- Go to `WP Admin » Appearance » Customize » Site Identity`.
+- Set up the site title, tagline and site icon according to your needs.
 
-**Menus | _Appearance -> Customize -> Menus_**
-* Setup primary menu.
+## Set up the menu
 
-**Widgets | _Appearance -> Customize -> Widgets_**
-* Setup your widgets.
+- Go to `WP Admin » Appearance » Menus`.
+- Set up the menu(s) according to your needs.
 
-**Front Page | _Appearance -> Customize -> Static Front Page_**
-* Setup your front page.
+## Set up the widgets
 
-**Fonts | _Appearance -> Fonts_**
-* This year we use font "Rubik" and "Roboto Slab" on Google web fonts. @import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Rubik:400,700&display=swap');
-* If you want to use FontAwesome. Enter CDN URL (https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css)
+- Go to `WP Admin » Appearance » Widgets`.
+- Set up the widgets according to your needs.
 
+## Set up the front page
 
-## Installation ##
+- Go to `WP Admin » Settings » Reading`.
+- In the section `Your homepage displays` select `A static page (select below)`
+- Select the front page according to your needs.
 
-- Install dependencies `npm install`
-- Compile SASS files `grunt css`
-- [Setup you local WordCamp.org sandbox](https://make.wordpress.org/community/handbook/wordcamp-organizer/first-steps/web-presence/contributing-to-wordcamp-org/setting-up-a-local-wordcamp-org-sandbox/) for full site theme development
+## Set up the fonts
 
+- Go to `WP Admin » Appearance » Customize » Fonts`.
+- In the section `Google Web Fonts` add `@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Rubik:400,700&display=swap');`.
+- In case you need Font Awesome icons, go to the section `Font Awesome` and add `https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css`.
 
+## Set up and build the theme
 
+- Install the dependencies using `npm i`.
+- Build the theme using `npm run build`.
+
+## WordCamp.org sandbox
+
+- If wanted, you can also [setup a local WordCamp.org sandbox](https://make.wordpress.org/community/handbook/wordcamp-organizer/first-steps/web-presence/contributing-to-wordcamp-org/setting-up-a-local-wordcamp-org-sandbox/).
+
+## Credits
+
+Credit where credit's due! The inital WordCamp Asia 2023 theme is based on the great work of ...
