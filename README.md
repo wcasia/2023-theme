@@ -45,4 +45,4 @@ Setup guide for the [WordCamp Asia 2023](https://asia.wordcamp.org/2023) theme.
 
 ## Credits
 
-Credit where credit's due! The inital WordCamp Asia 2023 theme is based on the great work of ...
+Credit where credit's due! The inital WordCamp Asia 2023 theme is based on the great work of @drebbits, @appsrex, @jainnidhi, @tepkenvannkorn & @wittwitsan.
