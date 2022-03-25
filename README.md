@@ -30,7 +30,7 @@ Setup guide for the [WordCamp Asia 2023](https://asia.wordcamp.org/2023) theme.
 
 ## Set up the fonts
 
-- Go to `WP Admin » Appearance » Customize » Fonts`.
+- Go to `WP Admin » Appearance » Fonts`.
 - In the section `Google Web Fonts` add `@import url('https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Rubik:400,700&display=swap');`.
 - In case you need Font Awesome icons, go to the section `Font Awesome` and add `https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css`.
 
