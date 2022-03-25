@@ -43,6 +43,12 @@ Setup guide for the [WordCamp Asia 2023](https://asia.wordcamp.org/2023) theme.
 
 If wanted, you can also [setup a local WordCamp.org sandbox](https://make.wordpress.org/community/handbook/wordcamp-organizer/first-steps/web-presence/contributing-to-wordcamp-org/setting-up-a-local-wordcamp-org-sandbox/).
 
+## Known problems
+
+> I applied CSS changes, ran `npm run build`, uploaded the changes to GitHub and cleared the cache. Yet, my changes are not visible on the site.
+
+If this happens, simply head over to https://asia.wordcamp.org/2023/wp-admin/themes.php?page=remote-css, change `Output Mode` to `Replace` and save the changes. Then, change `Output Mode` back to `Add-on` and save again. You should now see the applied changes.
+
 ## Questions or suggestions?
 
 Keep 'em coming! Simply open a new issue via https://github.com/wcasia/theme-2023/issues/new.
