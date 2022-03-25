@@ -5,7 +5,7 @@ Setup guide for the [WordCamp Asia 2023](https://asia.wordcamp.org/2023) theme.
 ## Set up the theme
 
 - Go to `WP Admin » Appearance » Themes`.
-- Select the [`Twenty Twenty`](https://wordpress.org/themes/twentytwenty/) theme.
+- Select the `CampSite 2017` theme.
 
 ## Set up the site identity
 
