@@ -1513,6 +1513,8 @@ article.comment-body .reply {
 	width: 100%;
 }
 
+.footer-widgets-block h1,
+.footer-widgets-block h2,
 .footer-widgets-block h3,
 .footer-widgets-block p {
 	color: #f7f8f4;
