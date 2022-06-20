@@ -192,15 +192,15 @@
 		background: transparent;
 		color: $color-white;
 		margin: 0;
-		li {
+		li.menu-item {
 			a {
 				border: none;
 				color: $color-white;
 				
 				&:hover, &:focus {
 					background: transparent;
-					border: underline;
 					color: $color-white;
+					text-decoration: dotted;
 				}
 			}
 		}
