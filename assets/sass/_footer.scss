@@ -187,6 +187,22 @@
 			border-bottom: 1px solid $color-cream;
 		}
 	}
+
+	ul {
+		background: transparent;
+		color: $color-white;
+		margin: 0;
+		li {
+			a {
+				border: none;
+				color: $color-white;
+				
+				&:hover, &:focus {
+					border: underline;
+				}
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 768px) {

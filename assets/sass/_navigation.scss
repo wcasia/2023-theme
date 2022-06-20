@@ -55,20 +55,20 @@
 	}
 }
 
-.menu {
-	background: $color-white;
+// .menu {
+// 	background: $color-white;
 
-	&:before, &:after {
-		content: " ";
-		display: table;
-	}
-	&:after {
-		clear: both;
-	}
-	li {
-		float: none;
-	}
-}
+// 	&:before, &:after {
+// 		content: " ";
+// 		display: table;
+// 	}
+// 	&:after {
+// 		clear: both;
+// 	}
+// 	li {
+// 		float: none;
+// 	}
+// }
 
 .menu-item {
 	position: relative;
