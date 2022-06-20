@@ -198,7 +198,9 @@
 				color: $color-white;
 				
 				&:hover, &:focus {
+					background: transparent;
 					border: underline;
+					color: $color-white;
 				}
 			}
 		}
