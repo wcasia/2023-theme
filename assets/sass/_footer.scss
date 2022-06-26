@@ -171,7 +171,12 @@
 .footer-widgets-block {
 	width: 100%;
 
-	h1, h2, h3, h4, h5, h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		color: $color-white;
 		font-size: 1.5em;
 	}
@@ -191,16 +196,20 @@
 	ul {
 		background: transparent;
 		color: $color-white;
+		list-style: none;
 		margin: 0;
+
 		li.menu-item {
 			a {
-				border: none;
+				border-bottom: 1px dotted;
 				color: $color-white;
-				
-				&:hover, &:focus {
+				padding: 0;
+
+				&:hover,
+				&:focus {
 					background: transparent;
+					border-bottom: 1px solid;
 					color: $color-white;
-					text-decoration: underline;
 				}
 			}
 		}
