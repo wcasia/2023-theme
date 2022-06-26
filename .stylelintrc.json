@@ -1,5 +1,6 @@
 {
   "extends": "stylelint-config-wordpress",
+  "customSyntax": "postcss-less",
   "rules": {
     "font-family-no-missing-generic-family-keyword": null,
     "no-descending-specificity": null,
