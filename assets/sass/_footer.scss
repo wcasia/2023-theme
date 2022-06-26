@@ -198,10 +198,12 @@
 		color: $color-white;
 		list-style: none;
 		margin: 0;
+		padding: 0;
 
 		li.menu-item {
 			a {
 				border-bottom: 1px dotted;
+				border-top: none;
 				color: $color-white;
 				padding: 0;
 
