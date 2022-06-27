@@ -1,6 +1,6 @@
 name: Lint CSS
 
-on: [pull_request, push]
+on: [pull_request]
 
 jobs:
   Lint:
@@ -11,4 +11,5 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: latest
+      - run: npm ci
       - run: npm run lint
