@@ -1,4 +1,4 @@
-/* GLOBAL --------------------------------------------------------------------*/
+/* GLOBAL -------------------------------------------------------------------- */
 
 body {
 	background: $color-cream;
@@ -10,7 +10,7 @@ body {
 	position: relative;
 }
 
-::-moz-selection {
+::selection {
 	color: $color-white;
 	background-color: $color-rose-pink;
 }
@@ -29,7 +29,6 @@ hr {
 }
 
 @media (min-width: 48em) {
-
 	hr {
 		margin-top: 3rem;
 		margin-bottom: 3rem;
@@ -37,7 +36,6 @@ hr {
 }
 
 @media (min-width: 62em) {
-
 	hr {
 		margin-top: 4rem;
 		margin-bottom: 4rem;
@@ -56,7 +54,7 @@ img {
 figcaption {
 	margin-top: 0.5rem;
 	margin-bottom: 0;
-	color: rgba(0, 0, 0, 0.6);
+	color: rgba(0, 0, 0, 60%);
 }
 
 table {
@@ -73,14 +71,12 @@ caption {
 td,
 th {
 	padding: 0.5rem 1rem;
-	border-top: 1px solid rgba(0, 0, 0, 0.1);
+	border-top: 1px solid rgba(0, 0, 0, 10%);
 	font-size: 16px;
 	font-size: 1rem;
-	line-height: 1.5;
 }
 
 @media (min-width: 48em) {
-
 	td,
 	th {
 		padding: 1rem;

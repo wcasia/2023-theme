@@ -1,12 +1,12 @@
-/* FOOTER --------------------------------------------------------------------*/
+/* FOOTER -------------------------------------------------------------------- */
 
-/* SIDEBAR WIDGET ------------------------------------------------------------*/
+/* SIDEBAR WIDGET ------------------------------------------------------------ */
 
 #secondary-sidebar .widget {
 	position: relative;
 	background-color: #f8f8f8;
 	margin: 0;
-	padding: 2.5rem 0 1.5rem 0;
+	padding: 2.5rem 0 1.5rem;
 
 	&::before {
 		background-color: #f2f2f2;
@@ -30,8 +30,7 @@
 	content: "";
 }
 
-
-/* SOCIAL WIDGET (TEXT WIDGET) -----------------------------------------------*/
+/* SOCIAL WIDGET (TEXT WIDGET) ----------------------------------------------- */
 
 .list-social {
 	list-style: none;
@@ -52,14 +51,12 @@
 
 .list-social li {
 	font-size: 1em;
-	line-height: 1.25em;
 	display: block;
 	margin-top: 0;
 	text-align: center;
 }
 
 @media (min-width: 24em) {
-
 	.list-social li {
 		width: 46%;
 		display: inline-block;
@@ -67,7 +64,6 @@
 }
 
 @media (min-width: 37.5em) {
-
 	.list-social li {
 		width: 30%;
 		min-width: 12.5rem;
@@ -104,7 +100,7 @@
 .list-social a::after {
 	font-family: FontAwesome;
 	font-size: 2rem;
-	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
 	transform: translateX(-50%);
 	width: 3rem;
 	height: 3rem;
@@ -133,8 +129,7 @@
 	content: "\f16d";
 }
 
-
-/* SITE FOOTER ---------------------------------------------------------------*/
+/* SITE FOOTER --------------------------------------------------------------- */
 
 .site-footer {
 	background-color: $color-red;
@@ -148,7 +143,6 @@
 			color: $color-white;
 			display: inline-block;
 			font-size: 0.8125em;
-
 			font-weight: $font-weight-light;
 			margin: 0 10px;
 
@@ -183,7 +177,6 @@
 	p {
 		color: $color-white;
 		font-size: 1em;
-
 		font-weight: $font-weight-light;
 
 		a {
@@ -218,7 +211,6 @@
 }
 
 @media screen and (min-width: 768px) {
-
 	#footer-widgets {
 		flex-direction: row;
 	}
@@ -234,10 +226,9 @@
 	}
 }
 
-/* JETPACK SUBSCRIPTION WIDGET -----------------------------------------------*/
+/* JETPACK SUBSCRIPTION WIDGET ----------------------------------------------- */
 
 .jetpack_subscription_widget {
-
 	h2.widget-title {
 		font-size: 1.25em;
 		color: $color-white;
@@ -246,7 +237,6 @@
 
 	#subscribe-text p {
 		font-size: 0.9375em;
-		line-height: 1.4;
 	}
 
 	#subscribe-email {
@@ -262,10 +252,10 @@
 			box-shadow: none;
 
 			&::placeholder {
-				color: rgba(255, 255, 255, 0.8);
+				color: rgba(255, 255, 255, 80%);
 
 				.entry-content & {
-					color: rgba(54, 57, 59, 0.8);
+					color: rgba(54, 57, 59, 80%);
 				}
 			}
 
@@ -288,9 +278,7 @@
 
 		button {
 			font-family: $font-secondary;
-
 			font-weight: $font-weight-bold;
-			line-height: 1;
 			width: 40%;
 			height: 40px;
 			padding: 0;
@@ -311,26 +299,23 @@
 	}
 }
 
-
-/* MILESTONE WIDGET ----------------------------------------------------------*/
+/* MILESTONE WIDGET ---------------------------------------------------------- */
 
 .milestone-widget {
-
 	.milestone-content {
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 10%);
 	}
 
 	.milestone-header {
 		background: none;
 		border-width: 6px;
-		border-color: white;
+		border-color: $color-white;
 		border-style: solid;
 		border-bottom: none;
 
 		strong.event {
 			font-family: $font-primary;
 			font-size: 1em;
-
 			font-weight: $font-weight-bold;
 			color: #fff;
 		}
@@ -349,7 +334,6 @@
 			color: $color-red;
 			font-size: 4.768em;
 			font-family: $font-primary;
-			line-height: 1;
 		}
 
 		.label {

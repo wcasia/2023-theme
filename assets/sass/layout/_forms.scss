@@ -1,4 +1,4 @@
-/* FORMS ---------------------------------------------------------------------*/
+/* FORMS --------------------------------------------------------------------- */
 
 button,
 html input[type="button"],
@@ -55,10 +55,9 @@ textarea {
 	color: $color-grey;
 	font-family: $font-secondary;
 	font-size: 1em;
-
 	font-weight: $font-weight-regular;
 	box-shadow: inset 0 0.125rem 0 0 #f7f7fc;
-	-webkit-appearance: none;
+	appearance: none;
 
 	&:focus {
 		color: $color-grey;
@@ -74,7 +73,6 @@ select {
 	cursor: pointer;
 	font-family: $font-secondary;
 	font-size: 1em;
-
 	font-weight: $font-weight-regular;
 	height: 40px;
 	box-shadow: none;
@@ -88,7 +86,6 @@ select {
 }
 
 @media only screen and (max-width: 767px) {
-
 	.contact-form input[type="email"],
 	.contact-form input[type="text"],
 	.contact-form input[type="url"],

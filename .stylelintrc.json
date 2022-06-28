@@ -1,10 +1,18 @@
 {
-  "extends": "stylelint-config-wordpress",
-  "customSyntax": "postcss-less",
-  "rules": {
-    "font-family-no-missing-generic-family-keyword": null,
-    "no-descending-specificity": null,
-    "selector-class-pattern": null,
-    "selector-id-pattern": null
-  }
+	"extends": "@wordpress/stylelint-config/scss",
+	"rules": {
+		"at-rule-empty-line-before": null,
+		"at-rule-no-unknown": null,
+		"comment-empty-line-before": null,
+		"declaration-block-no-duplicate-properties": null,
+		"font-family-no-missing-generic-family-keyword": null,
+		"font-weight-notation": null,
+		"max-line-length": null,
+		"no-descending-specificity": null,
+		"no-duplicate-selectors": null,
+		"rule-empty-line-before": null,
+		"selector-class-pattern": null,
+		"value-keyword-case": null,
+		"scss/no-global-function-names": null
+	}
 }

@@ -1,4 +1,4 @@
-/* MIXINS --------------------------------------------------------------------*/
+/* MIXINS -------------------------------------------------------------------- */
 
 @mixin font-size ($size) {
 	font-size: $size + px;
@@ -17,12 +17,13 @@
 	display: block;
 
 	@include wh($w, $h);
+
 	text-indent: -9999px;
 }
 
 @mixin logo($logo, $w, $h) {
-
 	@include replace-text-with-img($logo, center center, $w, $h);
+
 	background-size: $w $h;
 
 	>a {

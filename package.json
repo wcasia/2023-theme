@@ -23,7 +23,8 @@
 		"postcss": "^8.4.12",
 		"postcss-cli": "^9.1.0",
 		"postcss-less": "^6.0.0",
-		"stylelint-config-wordpress": "^17.0.0"
+		"stylelint": "^14.9.1",
+		"stylelint-config-standard": "^26.0.0"
 	},
 	"browserslist": [
 		"extends @wordpress/browserslist-config"
@@ -31,7 +32,9 @@
 	"scripts": {
 		"build": "node-sass assets/sass/style.scss style.css --output-style compressed --indent-type tab --indent-width 1 --source-map true",
 		"watch": "npm run build && npm run build -- -w",
-		"lint": "stylelint **/*.scss"
+		"lint": "stylelint **/*.scss",
+		"lint:fix": "stylelint '**/*.scss' --fix"
+
 	},
 	"keywords": []
 }

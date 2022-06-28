@@ -1,305 +1,272 @@
-/* HEADER --------------------------------------------------------------------*/
+/* HEADER -------------------------------------------------------------------- */
 
 .home .site-header {
-    background: url(https://asia.wordcamp.org/2023/files/2022/05/wcasia-noyear-header_w2000.png) center no-repeat;
-    background-size: auto 130%;
+	background: url(https://asia.wordcamp.org/2023/files/2022/05/wcasia-noyear-header_w2000.png) center no-repeat;
+	background-size: auto 130%;
 
-    .custom-header {
-        .site-branding {
-            padding-top: 2.5em;
-        }
+	.custom-header {
+		.site-branding {
+			padding-top: 2.5em;
+		}
 
-        .site-branding .site-title {
-            font-size: 30.17px;
-            line-height: 36px;
-            width: 80%;
-        }
-    }
+		.site-branding .site-title {
+			font-size: 30.17px;
+			width: 80%;
+		}
+	}
 
-    #header-widgets {
-        padding-bottom: 0;
-    }
+	#header-widgets {
+		padding-bottom: 0;
+	}
 
-    #header-widgets .widget {
-        font-size: 16.97px;
-        line-height: 22px;
-        margin: 0 auto 20px;
-        width: 60%;
-    }
+	#header-widgets .widget {
+		font-size: 16.97px;
+		margin: 0 auto 20px;
+		width: 60%;
+	}
 
-    #header-widget-2 {
-        margin-top: 5em;
-    }
+	#header-widget-2 {
+		margin-top: 5em;
+	}
 }
 
 .site-header {
-    .custom-header {
-        clear: both;
+	.custom-header {
+		clear: both;
 
-        & .custom-logo-link,
-        & .custom-logo {
-            display: none;
-        }
+		.custom-logo-link,
+		.custom-logo {
+			display: none;
+		}
 
-        .site-branding {
-            padding-top: 1.5em;
-            padding-bottom: 1.5em;
-            text-align: center;
-        }
+		.site-branding {
+			padding-top: 1.5em;
+			padding-bottom: 1.5em;
+			text-align: center;
+		}
 
-        .site-title {
-            text-align: center;
-            width: 80%;
-            max-width: 100%;
-            display: inline-block;
-            margin-top: 0;
+		.site-title {
+			text-align: center;
+			width: 80%;
+			max-width: 100%;
+			display: inline-block;
+			margin-top: 0;
 
-            a {
-                display: inherit;
-                color: $color-red;
-            }
+			a {
+				display: inherit;
+				color: $color-red;
+			}
 
-            a:before {
-                background-image: url(https://2020.asia.wordcamp.org/files/2019/08/logomark-color-light@2x-1.png);
-                content: '';
-                display: block;
-                height: 120px;
-                width: 120px;
-                background-size: contain;
-                margin: 0 auto 0.5em;
-            }
+			a::before {
+				background-image: url(https://2020.asia.wordcamp.org/files/2019/08/logomark-color-light@2x-1.png);
+				content: "";
+				display: block;
+				height: 120px;
+				width: 120px;
+				background-size: contain;
+				margin: 0 auto 0.5em;
+			}
 
-            .archive &,
-            .page &,
-            .single & {
-                font-family: $font-primary;
-                font-weight: 700;
-                margin-bottom: .5rem;
-                line-height: 1.25em;
-            }
-        }
+			.archive &,
+			.page &,
+			.single & {
+				font-family: $font-primary;
+				font-weight: 700;
+				margin-bottom: 0.5rem;
+			}
+		}
 
-        .site-description {
-            display: none; // Used as browser title description.
-            color: $color-blue;
-            font-family: $font-secondary;
-            font-size: .8em;
-            line-height: 1.3;
-            font-weight: 500;
-            padding-top: .5em;
-            margin: 0;
-        }
-    }
+		.site-description {
+			display: none; // Used as browser title description.
+			color: $color-blue;
+			font-family: $font-secondary;
+			font-size: 0.8em;
+			font-weight: 500;
+			padding-top: 0.5em;
+			margin: 0;
+		}
+	}
 }
 
 .site-header {
-    .custom-header {
-        .site-branding {
-            padding-top: 2.5em;
-            padding-bottom: 0;
-        }
+	.custom-header {
+		.site-branding {
+			padding-top: 2.5em;
+			padding-bottom: 0;
+		}
 
-        .home & .site-title {
-            font-size: 1.5em;
-        }
+		.home & .site-title {
+			font-size: 1.5em;
+		}
 
-        .page & .site-title,
-        .single & .site-title {
-            font-size: 1.5em;
-        }
+		.page & .site-title,
+		.single & .site-title {
+			font-size: 1.5em;
+		}
 
-        .site-description {
-            text-align: center;
-            font-size: 1em;
-        }
-    }
+		.site-description {
+			text-align: center;
+			font-size: 1em;
+		}
+	}
 }
 
-
-/* HEADER WIDGETS ------------------------------------------------------------*/
+/* HEADER WIDGETS ------------------------------------------------------------ */
 
 #header-widgets {
-    padding-bottom: 0;
-    text-align: center;
+	padding-bottom: 0;
+	text-align: center;
 
-    @media screen and (min-width: 1024px) {
-        padding-bottom: 2.5em;
-    }
+	@media screen and (min-width: 1024px) {
+		padding-bottom: 2.5em;
+	}
 
-    @media screen and (min-width: 1600px) {}
+	.widget {
+		text-align: center;
+	}
 
-    @media screen and (min-width: 1920px) {}
+	.widget_media_image {
+		display: none;
+	}
 
-    .widget {
-        text-align: center;
-    }
-
-    .widget_media_image {
-        display: none;
-    }
-
-    #header-widget-2 {
-        #custom_html-4 {
-            background-color: #00924b;
-            color: #fff;
-            margin: auto;
-            padding: 10px 20px;
-            position: relative;
-            width: 80%;
-            transform: skew(-20deg);
-        }
-
-        .textwidget {
-            transform: skew(20deg);
-        }
-    }
+	#header-widget-2 {
+		.textwidget {
+			transform: skew(20deg);
+		}
+	}
 }
 
 .cta-button {
-    border: 1px solid $color-red;
-    display: table;
-    margin: 30px auto;
-    width: 700px;
+	border: 1px solid $color-red;
+	display: table;
+	margin: 30px auto;
+	width: 700px;
 
-    p,
-    a {
-        display: table-cell;
-        margin: 0;
-        padding: 10px 20px;
-        font-size: 1.2em;
-        vertical-align: middle;
-    }
+	p,
+	a {
+		display: table-cell;
+		margin: 0;
+		padding: 10px 20px;
+		font-size: 1.2em;
+		vertical-align: middle;
+	}
 
-    a {
-        background-color: $color-red;
-        color: #FFF !important;
-        font-size: 1.6em;
-        text-transform: uppercase;
-        text-align: center;
-    }
+	a {
+		background-color: $color-red;
+		color: #fff !important;
+		font-size: 1.6em;
+		text-transform: uppercase;
+		text-align: center;
+	}
 }
 
 @media screen and (min-width: 400px) {
-    .home .site-header #header-widget-2 {
-        margin-top: 7em;
-    }
+	.home .site-header #header-widget-2 {
+		margin-top: 7em;
+	}
 }
 
 @media screen and (min-width: 568px) {
-    .site-header .custom-header .site-branding {
-        padding-top: 8.5em;
-    }
-
-    // iPhone 5 landscape
-    #header-widgets #header-widget-2 #custom_html-4 {
-        display: inline-block;
-        width: auto;
-    }
+	.site-header .custom-header .site-branding {
+		padding-top: 8.5em;
+	}
 }
 
 @media screen and (min-width: 768px) {
-    .site-header {
-        .custom-header {
-            .site-title {
-                width: 100%;
-            }
+	.site-header {
+		.custom-header {
+			.site-title {
+				width: 100%;
+			}
 
-            .home & .site-title {
-                font-size: 2.215em;
-            }
+			.home & .site-title {
+				font-size: 2.215em;
+			}
 
-            .site-description {
-                font-size: 1em;
-            }
-        }
-    }
+			.site-description {
+				font-size: 1em;
+			}
+		}
+	}
 
-    .home .site-header #header-widget-2 {
-        margin-top: 10em;
-    }
+	.home .site-header #header-widget-2 {
+		margin-top: 10em;
+	}
 }
 
 @media screen and (min-width: 1024px) {
-    .site-header {
-        .custom-header {
-            .site-branding {
-                padding-top: 5.5em;
-            }
+	.site-header {
+		.custom-header {
+			.site-branding {
+				padding-top: 5.5em;
+			}
 
-            .site-title {
-                a:before {
-                    height: 200px;
-                    width: 200px;
-                }
-            }
+			.site-title {
+				a::before {
+					height: 200px;
+					width: 200px;
+				}
+			}
 
-            .home & .site-title {
-                font-size: 3.215em;
-            }
+			.home & .site-title {
+				font-size: 3.215em;
+			}
 
-            .page & .site-title,
-            .single & .site-title {
-                font-size: 1.667em;
-            }
+			.page & .site-title,
+			.single & .site-title {
+				font-size: 1.667em;
+			}
 
-            .site-description {
-                font-size: 1.1em;
-            }
-        }
-    }
+			.site-description {
+				font-size: 1.1em;
+			}
+		}
+	}
 }
 
 @media screen and (min-width: 1200px) {
-    .home .site-header {
-        background-position: center -2em;
-        background-size: cover;
-    }
+	.home .site-header {
+		background-position: center -2em;
+		background-size: cover;
+	}
 
-    .site-header .custom-header .site-branding {
-        padding-top: 2.5em;
-    }
+	.site-header .custom-header .site-branding {
+		padding-top: 2.5em;
+	}
 
-    .home .site-header .custom-header .site-branding {
-        padding-top: 7em;
-    }
+	.home .site-header .custom-header .site-branding {
+		padding-top: 7em;
+	}
 
-    .home .site-header #header-widget-2 {
-        margin-top: 0;
-    }
+	.home .site-header #header-widget-2 {
+		margin-top: 0;
+	}
 
-    .home .site-header #header-widgets {
-        padding-bottom: 17em;
-    }
+	.home .site-header #header-widgets {
+		padding-bottom: 17em;
+	}
 }
 
 @media screen and (min-width: 1400px) {
-    .site-header .custom-header .site-branding {
-        padding-top: 5em;
-    }
+	.site-header .custom-header .site-branding {
+		padding-top: 5em;
+	}
 }
 
 @media screen and (min-width: 1600px) {
-    .site-header .custom-header .site-branding {
-        padding-top: 5em;
-    }
-}
-
-@media screen and (min-width: 1920px) {
-    .site-header {
-        .custom-header {
-            .site-branding {}
-        }
-    }
+	.site-header .custom-header .site-branding {
+		padding-top: 5em;
+	}
 }
 
 @media only screen and (max-width: 767px) {
-    .cta-button {
-        text-align: center;
-        width: 80%;
+	.cta-button {
+		text-align: center;
+		width: 80%;
 
-        p,
-        a {
-            display: block;
-        }
-    }
+		p,
+		a {
+			display: block;
+		}
+	}
 }
