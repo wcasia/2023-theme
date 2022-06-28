@@ -2,38 +2,27 @@
 Theme Name: WordCamp Asia 2023
 Author: Team WordCamp Asia 2023
 Author URI: https://wpasia.org
-Version: 0.1.0
+Version: 1.0
 */
 
-//== Variables & Mixins
-@import "variables";
-@import "mixins";
+//== Utils
+@import "utils/variables";
+@import "utils/typography";
+@import "utils/mixins";
 
-//== General
-@import "global";
-@import "typography";
-@import "layout";
-@import "form";
-@import "blocks";
+//== Layout
+@import "layout/content";
+@import "layout/footer";
+@import "layout/forms";
+@import "layout/global";
+@import "layout/header";
+@import "layout/layout";
+@import "layout/navigation";
 
-//== Elements
-@import "header";
-@import "navigation";
-@import "content";
-@import "footer";
-
-//== Components
-// @import "animate";
-@import "ticket";
-@import "organizer";
-@import "attendee";
-@import "sponsor";
-@import "speaker";
-@import "session";
-@import "socialmediastreaming";
-
-//== Media Query
-// @import "mq";
-
-//== Misc.
-// @import "misc";
+//== Teams
+@import "teams/attendees";
+@import "teams/organisers";
+@import "teams/sessions";
+@import "teams/speakers";
+@import "teams/sponsors";
+@import "teams/tickets";

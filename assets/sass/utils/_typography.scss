@@ -1,12 +1,9 @@
-/* TYPOGRAPHY
----------------------------------------*/
+/* TYPOGRAPHY --------------------------------------------------------------- */
 
 body {
 	font-family: $font-secondary;
-
-	@include font-weight(regular);
+	font-weight: $font-weight-regular;
 	font-size: 1em;
-	line-height: 1.5625em;
 	color: $text-color;
 }
 
@@ -23,11 +20,9 @@ h4,
 h5,
 h6 {
 	font-family: $font-primary;
-
-	@include font-weight(bold);
+	font-weight: $font-weight-bold;
 	margin-top: 2rem;
 	margin-bottom: 0.5rem;
-	line-height: 1.25em;
 }
 
 h1:first-child,
@@ -69,7 +64,7 @@ h6 {
 
 b,
 strong {
-	@include font-weight(bold);
+	font-weight: $font-weight-bold;
 }
 
 em {
@@ -101,7 +96,6 @@ p {
 
 sup sub {
 	font-size: 75%;
-	line-height: 0;
 	position: relative;
 }
 
@@ -137,7 +131,7 @@ li {
 }
 
 blockquote {
-	margin: 0 -1.5rem 1.5rem -1.5rem;
+	margin: 0 -1.5rem 1.5rem;
 	padding: 1.5rem;
 	border-top: 1px solid #f2f2f2;
 	border-bottom: 1px solid #f2f2f2;
@@ -146,7 +140,6 @@ blockquote {
 blockquote p {
 	font-family: $font-primary;
 	font-size: 1em;
-	line-height: 1.4;
 	color: $color-blue;
 
 	em {
@@ -169,8 +162,7 @@ pre {
 	border-radius: 0.1875rem;
 	font-size: 14px;
 	font-size: 0.875rem;
-	line-height: 1.5;
-	color: rgba(0, 0, 0, 0.75);
+	color: rgba(0, 0, 0, 75%);
 	font-family: "Bitstream Vera Sans Mono", Consolas, Courier, monospace;
 	direction: ltr;
 	text-align: left;
@@ -178,11 +170,11 @@ pre {
 	word-spacing: normal;
 	word-break: normal;
 	word-wrap: normal;
-	-webkit-hyphens: none;
-	-ms-hyphens: none;
 	hyphens: none;
-	-moz-tab-size: 2;
-	-o-tab-size: 2;
+	hyphens: none;
+	hyphens: none;
+	tab-size: 2;
+	tab-size: 2;
 	tab-size: 2;
 }
 

@@ -1,5 +1,4 @@
-/* FORM
----------------------------------------*/
+/* FORMS --------------------------------------------------------------------- */
 
 button,
 html input[type="button"],
@@ -13,8 +12,7 @@ input[type="submit"] {
 	border-radius: 0;
 	color: #fff;
 	font-family: $font-secondary;
-
-	@include font-weight(semi-bold);
+	font-weight: $font-weight-semi-bold;
 	font-size: 1rem;
 	padding: 1rem 2rem;
 	text-transform: uppercase;
@@ -57,10 +55,9 @@ textarea {
 	color: $color-grey;
 	font-family: $font-secondary;
 	font-size: 1em;
-
-	@include font-weight(regular);
+	font-weight: $font-weight-regular;
 	box-shadow: inset 0 0.125rem 0 0 #f7f7fc;
-	-webkit-appearance: none;
+	appearance: none;
 
 	&:focus {
 		color: $color-grey;
@@ -76,8 +73,7 @@ select {
 	cursor: pointer;
 	font-family: $font-secondary;
 	font-size: 1em;
-
-	@include font-weight(regular);
+	font-weight: $font-weight-regular;
 	height: 40px;
 	box-shadow: none;
 	background: transparent;
@@ -90,7 +86,6 @@ select {
 }
 
 @media only screen and (max-width: 767px) {
-
 	.contact-form input[type="email"],
 	.contact-form input[type="text"],
 	.contact-form input[type="url"],

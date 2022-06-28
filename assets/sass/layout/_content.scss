@@ -1,5 +1,4 @@
-/* CONTENT
----------------------------------------*/
+/* CONTENT ------------------------------------------------------------------- */
 
 .entry-header {
 	text-align: center;
@@ -28,12 +27,6 @@
 .entry-meta {
 	font-size: 0.875em;
 
-	a > time {
-	}
-
-	.byline a {
-	}
-
 	.home & .byline {
 		display: inline;
 	}
@@ -41,10 +34,6 @@
 
 .entry-content {
 	margin: 1.5rem 0;
-
-	a,
-	a:visited {
-	}
 
 	h2 {
 		font-size: 1.953em;
@@ -66,7 +55,7 @@
 
 	ul,
 	ol {
-		margin: 0 0 1.5em 0;
+		margin: 0 0 1.5em;
 	}
 
 	a.more-link {
@@ -77,11 +66,10 @@
 
 	.has-small-font-size {
 		font-size: 0.8125em;
-		line-height: 1.5;
 	}
+
 	.has-medium-font-size {
 		font-size: 1.25em;
-		line-height: 1.6;
 	}
 
 	.alignfull {
@@ -128,11 +116,11 @@
 	}
 
 	.wp-block-table {
-		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 10%);
 
 		th {
 			background-color: $color-red;
-			color: #fff;
+			color: $color-white;
 			font-size: 0.9375rem;
 			font-weight: 400;
 		}
@@ -154,6 +142,7 @@
 	margin-bottom: 2.5rem;
 	padding-bottom: 2.5rem;
 	position: relative;
+
 	&::after {
 		background-color: #eee;
 		content: "";
@@ -168,11 +157,13 @@
 .entry-footer {
 	.comments-link {
 		margin-right: 1rem;
+
 		a {
 			padding-bottom: 0.25em;
 			border-bottom: 1px dotted $color-rose-pink;
 		}
 	}
+
 	.edit-link {
 		a {
 			padding-bottom: 0.25em;
@@ -182,19 +173,20 @@
 }
 
 /* POST NAVIGATION
----------------------------------------*/
+--------------------------------------- */
 
 .site-main .post-navigation,
 .site-main .posts-navigation {
 	.nav-previous {
 		font-size: 0.875rem;
-		line-height: 1.4;
 		width: calc(50% - 1rem);
+
 		a {
 			position: relative;
 			padding-top: 1.5rem;
 			display: block;
-			&:before {
+
+			&::before {
 				content: "\f104";
 				margin-right: 0.5em;
 				color: $color-red;
@@ -205,15 +197,17 @@
 			}
 		}
 	}
+
 	.nav-next {
 		font-size: 0.875rem;
-		line-height: 1.4;
 		width: calc(50% - 1rem);
+
 		a {
 			position: relative;
 			padding-top: 1.5rem;
 			display: block;
-			&:after {
+
+			&::after {
 				content: "\f105";
 				margin-left: 0.5em;
 				color: $color-red;
@@ -227,42 +221,48 @@
 }
 
 /* COMMENTS
----------------------------------------*/
+--------------------------------------- */
 
 .comments-area {
 	margin-top: 2.5rem;
 }
+
 .comments-title {
 	font-size: 1em;
 	margin-bottom: 1rem;
 }
+
 ol.comment-list {
-	margin: 0 0 1.5em 0;
+	margin: 0 0 1.5em;
 	padding: 0;
 	list-style: none;
-	& > .comment {
+
+	.comment {
 		margin-top: 1.5rem;
 		margin-bottom: 1.5rem;
 		border-bottom: 1px solid #eee;
 	}
+
 	.pingback {
 		font-size: 0.9375rem;
-		line-height: 1.5;
 	}
 }
+
 ol.children {
 	margin-left: 1rem;
 	padding-left: 0;
 	list-style: none;
 }
+
 article.comment-body {
 	position: relative;
 	padding-left: 0;
 	margin-bottom: 1.5rem;
+
 	.comment-author {
 		display: block;
 		font-size: 0.8em;
-		line-height: 1.5;
+
 		.avatar {
 			position: absolute;
 			top: 0;
@@ -270,69 +270,84 @@ article.comment-body {
 			// width: 2.625rem;
 			margin-bottom: 0;
 		}
+
 		b.fn {
-			@include font-weight(semi-bold);
+			font-weight: $font-weight-semi-bold;
 			margin-left: 3rem;
+
 			a {
 				color: $color-red;
 			}
 		}
+
 		.says {
 			display: none;
 		}
 	}
+
 	.comment-metadata {
 		font-size: 0.64em;
-		line-height: 1.4;
 		margin-left: 3.25rem;
+
 		a {
 			color: $color-red;
 		}
 	}
+
 	.comment-content {
 		margin-top: 0.5rem;
 		padding: 1.5rem;
 		background: #fafafa;
+
 		p:last-child {
 			margin-bottom: 0;
 		}
 	}
+
 	.reply {
 		margin-top: 0.5rem;
 		font-size: 0.8em;
 	}
 }
+
 .comment-respond {
 	padding: 1.5rem;
 	background: #f8f8f8;
+
 	.comment-reply-title {
 		font-size: 1.25em;
 	}
+
 	.comment-notes {
 		font-size: 0.875rem;
-		line-height: 1.4;
 		color: $color-blue;
 	}
+
 	.required {
 		color: $color-red;
 	}
+
 	.comment-form {
 		label {
 			font-size: 0.875rem;
 			color: $text-color;
 			text-transform: uppercase;
-			@include font-weight(medium);
+			font-weight: $font-weight-medium;
 		}
+
 		p {
 			margin-bottom: 1rem;
+
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
+
 		input[type="checkbox"],
 		input[type="radio"] {
 			margin-right: 5px;
 		}
+
 		.form-submit {
 			padding-top: 0.5rem;
 		}
@@ -340,20 +355,22 @@ article.comment-body {
 }
 
 /* SHARE
----------------------------------------*/
+--------------------------------------- */
 .sharedaddy .sd-title {
 	font-size: 0.9em;
-	@include font-weight(regular);
+	font-weight: $font-weight-regular;
 }
 
 /* BUTTON
----------------------------------------*/
+--------------------------------------- */
 .wp-block-button {
 	text-align: center;
+
 	.wp-block-button__link {
 		background-color: $color-red;
 		color: $color-white;
 		font-size: 1.25em;
+
 		&:hover,
 		&:focus,
 		&:visited {
@@ -361,6 +378,7 @@ article.comment-body {
 			color: $color-white;
 		}
 	}
+
 	&._float {
 		margin-bottom: 0;
 		position: fixed;
@@ -371,23 +389,26 @@ article.comment-body {
 }
 
 /* T-SHIRT TABLE
----------------------------------------*/
+--------------------------------------- */
 
 .tshirt-table {
 	border: 1px solid $color-rose-pink;
+
 	th {
 		background-color: $color-rose-pink;
 		border: 1px solid $color-rose-pink;
 		color: #fff;
 		font-size: 1.3em;
-		@include font-weight(regular);
+		font-weight: $font-weight-regular;
 		vertical-align: middle;
 	}
+
 	th,
 	td {
 		padding: 15px 20px;
 		text-align: center;
 	}
+
 	td {
 		border-top: 1px solid #f2f2f2;
 		border-left: 1px solid #f2f2f2;
@@ -400,20 +421,24 @@ article.comment-body {
 		th {
 			font-size: 1.1em;
 		}
+
 		th,
 		td {
 			padding: 5px 10px;
 		}
+
 		td {
 			font-size: 1em;
 		}
 	}
 }
+
 @media only screen and (max-width: 767px) {
 	.wp-block-button {
 		.wp-block-button__link {
 			font-size: 1.3em !important;
 		}
+
 		&._float {
 			left: 10px;
 			width: calc(100% - 20px);
@@ -425,12 +450,14 @@ article.comment-body {
 	.entry-title {
 		font-size: 2.441rem;
 	}
+
 	.page,
 	.single {
 		.entry-title {
 			font-size: 3.052em;
 		}
 	}
+
 	.entry-content {
 		.alignwide {
 			margin-left: -2.5rem;
